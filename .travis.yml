@@ -17,7 +17,7 @@ cache:
     ~/.R
 before_script:
   - rm -rf "/home/travis/.R/.syberia"
-  - Rscript -e 'install.packages("gbm")'
+  - Rscript -e 'install.packages("devtools")'
   - mkdir -p "$R_LIBS_USER"
 script: "Rscript -e 'library(syberia); library(methods); devtools::with_options(list(stub = 1), force); syberia::syberia_engine(); syberia::test_engine(); quit(status = 0);'"
 notifications:
