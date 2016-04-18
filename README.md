@@ -1,4 +1,4 @@
-# Survey.sy: A Syberia engine for doing survey research in R
+# Survey.sy: A Syberia engine for doing survey research in R <a href="https://travis-ci.org/peterhurford/survey.sy"><img src="https://img.shields.io/travis/peterhurford/survey.sy.svg"></a>
 
 Right now this just contains the analyze stage, which displays whatever analysis you run.
 

@@ -1,4 +1,18 @@
--
-  name: surveytools2
-  version: 0.1
-  repo: peterhurford/surveytools2
+packages:
+  -
+    name: stagerunner
+    version: 0.5.3
+    repo: syberia/stagerunner
+  -
+    name: director
+    version: 0.3.0.5.9000
+    repo: syberia/director
+  -
+    name: syberia
+    version: 0.6.1.9007
+    repo: syberia/syberia
+    ref: 0.6.1.9007
+  -
+    name: bettertrace
+    version: 0.1.1
+    repo: robertzk/bettertrace
