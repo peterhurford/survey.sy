@@ -4,15 +4,6 @@ Right now this just contains the analyze stage, which displays whatever analysis
 
 This also loads [the surveytools2 package](https://github.com/peterhurford/surveytools2) and [dplyr](https://github.com/hadley/dplyr) for survey analysis.
 
-```R
-,analyze = list(
-    "Mean difference in Obama favorability" =
-        function(df) mean(df$obama_tmp_diff, na.rm = TRUE),
-    "Pre-election post-election t-test" =
-        function(df) t.test(df$obama_tmp_pre, df$obama_tmp_post)
-  )
-```
+Analyze steps can be specified as a list. Alternatively, they can be specified as a list of lists, with the first list giving metadata on where to write out analyze data to and the second list giving the analysis steps.
 
-See [a live example analyzing Obama's post-election favorability ratings.](https://github.com/syberia/examples/blob/master/models/dev/survey/survey.R)
-
-More coming soon.
+Demo code coming soon.
